@@ -56,7 +56,7 @@
         <orientdb.version>3.2.32</orientdb.version>
 
         <!-- Other -->
-        <slf4j.version>2.0.9</slf4j.version>
+        <slf4j.version>2.0.17</slf4j.version>
     </properties>
 
     <dependencyManagement>
