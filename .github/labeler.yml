@@ -1,49 +1,75 @@
 # Label configuration for automatic PR labeling
+# Format for actions/labeler@v5
 
 documentation:
-  - '**/*.md'
-  - 'docs/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.md'
+      - 'docs/**/*'
 
 dependencies:
-  - 'pom.xml'
-  - '**/pom.xml'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'pom.xml'
+      - '**/pom.xml'
 
 configuration:
-  - 'src/main/resources/**/*'
-  - '**/application.properties'
-  - '**/application.yml'
-  - '.github/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/resources/**/*'
+      - '**/application.properties'
+      - '**/application.yml'
+      - '.github/**/*'
 
 tests:
-  - 'src/test/**/*'
-  - '**/*Test.java'
-  - '**/*IT.java'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/test/**/*'
+      - '**/*Test.java'
+      - '**/*IT.java'
 
 core:
-  - 'src/main/java/org/springframework/data/orientdb/core/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/core/**/*'
 
 repository:
-  - 'src/main/java/org/springframework/data/orientdb/repository/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/repository/**/*'
 
 config:
-  - 'src/main/java/org/springframework/data/orientdb/config/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/config/**/*'
 
 mapping:
-  - 'src/main/java/org/springframework/data/orientdb/core/mapping/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/core/mapping/**/*'
 
 query:
-  - 'src/main/java/org/springframework/data/orientdb/repository/query/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/repository/query/**/*'
 
 transaction:
-  - 'src/main/java/org/springframework/data/orientdb/transaction/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/transaction/**/*'
 
 observability:
-  - 'src/main/java/org/springframework/data/orientdb/observability/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/observability/**/*'
 
 schema:
-  - 'src/main/java/org/springframework/data/orientdb/core/schema/**/*'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/main/java/org/springframework/data/orientdb/core/schema/**/*'
 
 ci/cd:
-  - '.github/workflows/**/*'
-  - '.github/**/*'
-
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**/*'
+      - '.github/**/*'
