@@ -4,8 +4,11 @@
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.java.net/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![OrientDB](https://img.shields.io/badge/OrientDB-3.2.32-blue.svg)](https://orientdb.org)
+[![GitHub](https://img.shields.io/badge/GitHub-satishbabariya-blue.svg)](https://github.com/satishbabariya/spring-data-orientdb)
 
 Spring Data OrientDB provides a familiar and consistent Spring Data interface for [OrientDB](https://orientdb.org), the powerful multi-model graph database. This library brings the full power of Spring Data's repository abstraction, query derivation, transaction management, and entity lifecycle callbacks to OrientDB's graph and document capabilities.
+
+> **Note**: This is a community-driven project and is not officially supported by the Spring team. It provides Spring Data integration for OrientDB based on Spring Data Commons patterns.
 
 ## 🚀 Features
 
@@ -1254,7 +1257,7 @@ logging.level.com.orientechnologies.orient=DEBUG
 
 ## 📝 Example Application
 
-Complete working example: [spring-data-orientdb-examples](https://github.com/example/spring-data-orientdb-examples)
+Complete working example: [spring-data-orientdb-examples](https://github.com/satishbabariya/spring-data-orientdb-examples)
 
 ## 🤝 Contributing
 
@@ -1270,7 +1273,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ```bash
 # Clone repository
-git clone https://github.com/spring-projects/spring-data-orientdb.git
+git clone https://github.com/satishbabariya/spring-data-orientdb.git
 cd spring-data-orientdb
 
 # Build project
@@ -1302,10 +1305,10 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 📞 Support and Contact
 
-- **Issues**: [GitHub Issues](https://github.com/spring-projects/spring-data-orientdb/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/spring-projects/spring-data-orientdb/discussions)
+- **Issues**: [GitHub Issues](https://github.com/satishbabariya/spring-data-orientdb/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/satishbabariya/spring-data-orientdb/discussions)
 - **Stack Overflow**: Tag questions with `spring-data-orientdb`
-- **Documentation**: [Official Docs](https://docs.spring.io/spring-data/orientdb/docs/current/reference/html/)
+- **Author**: [@satishbabariya](https://github.com/satishbabariya)
 
 ## 🗺️ Roadmap
 
