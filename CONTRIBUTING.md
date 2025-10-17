@@ -296,17 +296,45 @@ class PersonRepositoryIT {
 ### Running Specific Tests
 
 ```bash
+# Run all unit tests (default)
+mvn test
+
 # Run specific test class
 mvn test -Dtest=PersonRepositoryTest
 
 # Run specific test method
 mvn test -Dtest=PersonRepositoryTest#shouldSaveAndFindPerson
 
-# Run integration tests only
+# Run integration tests (requires OrientDB)
+mvn verify
+
+# Run integration tests only (skip unit tests)
 mvn verify -DskipUnitTests
 
 # Run with coverage
 mvn clean test jacoco:report
+```
+
+### Integration Tests
+
+Integration tests (`*IT.java`) require OrientDB to be running and are **skipped by default in CI** to ensure fast, reliable builds. They should be run locally during development.
+
+**Why are integration tests skipped in CI?**
+- Require OrientDB database setup
+- Environment-specific configurations
+- Longer execution time
+- Platform-specific issues (especially on macOS/Windows)
+
+**Running integration tests locally:**
+```bash
+# Run all tests including integration tests
+mvn verify
+
+# Run only integration tests
+mvn failsafe:integration-test
+
+# Skip integration tests (default in CI)
+mvn test -DskipITs
 ```
 
 ## 🔄 CI/CD Pipeline
@@ -317,7 +345,7 @@ mvn clean test jacoco:report
 Runs on every push and pull request:
 - Multi-OS testing (Ubuntu, macOS, Windows)
 - Multi-JDK testing (Java 17, 21)
-- Unit and integration tests
+- Unit tests only (integration tests skipped for reliability)
 - Code coverage analysis
 - Test result archival
 
