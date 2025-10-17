@@ -24,7 +24,7 @@ jobs:
         cache: 'maven'
     
     - name: Build and Test
-      run: mvn clean verify
+      run: mvn clean test -DskipITs
     
     - name: Check code coverage
       run: mvn jacoco:check

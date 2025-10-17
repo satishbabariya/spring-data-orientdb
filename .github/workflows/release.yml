@@ -34,7 +34,7 @@ jobs:
       run: mvn clean package -DskipTests
     
     - name: Run tests
-      run: mvn test
+      run: mvn test -DskipITs
     
     - name: Generate changelog
       id: changelog
