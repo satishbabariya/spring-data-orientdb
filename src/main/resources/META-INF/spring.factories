@@ -1,0 +1,4 @@
+# Spring Data OrientDB Auto-Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.springframework.data.orientdb.config.OrientDBRepositoriesAutoConfiguration
+
