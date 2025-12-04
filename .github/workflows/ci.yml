@@ -54,7 +54,7 @@ jobs:
     
     - name: Archive test results
       if: always()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: test-results-${{ matrix.os }}-java${{ matrix.java }}
         path: |
@@ -64,7 +64,7 @@ jobs:
     
     - name: Archive code coverage results
       if: matrix.os == 'ubuntu-latest' && matrix.java == '17'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: code-coverage-report
         path: target/site/jacoco
