@@ -49,8 +49,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Spring -->
-        <spring-boot.version>3.5.7</spring-boot.version>
-        <spring-data-commons.version>3.5.5</spring-data-commons.version>
+        <spring-boot.version>3.5.8</spring-boot.version>
+        <spring-data-commons.version>3.5.6</spring-data-commons.version>
 
         <!-- OrientDB -->
         <orientdb.version>3.2.45</orientdb.version>
@@ -138,7 +138,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>3.5.7</version>
+            <version>3.5.8</version>
             <optional>true</optional>
         </dependency>
 
